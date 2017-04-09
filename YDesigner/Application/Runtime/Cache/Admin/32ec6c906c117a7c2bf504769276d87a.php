@@ -1,0 +1,53 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>YDesigner</title>
+    <meta name="description" content="YDesigner是一款强大的设计应用后台的工具。">
+    <script src="/YDesigner/Public/Admin/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+
+<body style="background: url(/YDesigner/Public/Admin/img/login-bg.png); background-size: cover;">
+    <img src="/YDesigner/Public/Admin/img/login-logo.png" style="position: absolute; top: 50px; left: 50px;" />
+    <div style="position: relative; width: 592px; height: 443px; background: url(/YDesigner/Public/Admin/img/login-form.png); margin: 0px auto; margin-top: 200px; font-family: 'Microsoft YaHei UI'; font-size: 14px;">
+        <form method="post" action="/YDesigner/index.php/Login/index.html">
+            <div style="height: 65px;"></div>
+            <div style="margin-left: 100px; width: 400px; border-bottom: 2px solid #266dbb; padding: 5px;">
+                <img src="/YDesigner/Public/Admin/img/login-user.png" style="vertical-align: bottom;" />
+                <input type="text" name="username" id="username" size="20" class="login_input" value="" style="width: 340px; font-size: 18px; color: #266dbb; font-family: 'Microsoft YaHei UI'; margin-left: 10px; border: none;" autocomplete="off" placeholder="用户名" />
+            </div>
+            <div style="height: 35px;"></div>
+            <div style="margin-left: 100px; width: 400px; border-bottom: 2px solid #266dbb; padding: 5px;">
+                <img src="/YDesigner/Public/Admin/img/login-pass.png" style="vertical-align: bottom; margin-right: 10px;" />
+                <input type="password" name="password" id="password" size="20" class="login_input" value="" style="width: 340px; font-size: 18px; color: #266dbb; font-family: 'Microsoft YaHei UI'; margin-left: 10px; border: none;" autocomplete="off" placeholder="密码" />
+            </div>
+            <div style="height: 15px"></div>
+            <div style="margin-left: 100px; width: 400px; padding: 5px;">
+                <input type="checkbox" style="" />保存密码
+                <a href="#" style="margin-left: 172px; color: black; text-decoration: none;">忘记密码</a> | <a href="#" style="text-decoration: none;">注册</a>
+            </div>
+            <div style="margin-top: 35px;">
+                <img src="/YDesigner/Public/Admin/img/login-btn.png" style="display: block; margin: 0px auto; cursor:pointer;" id="btn-login" />
+            </div>
+        </form>
+    </div>
+    <script>
+        $(function () {
+            $("#btn-login").click(function () {
+                $.post("<?php echo U('login');?>", {
+                    username: $("#username").val(),
+                    password: $("#password").val()
+                }, function (data) {
+                    if (data.statusCode == 200) {
+                        window.location = "<?php echo U('Index/index');?>";
+                    } else {
+                        alert(data.message);
+                    }
+                }, "json");
+            });
+        });
+    </script>
+</body>
+
+</html>

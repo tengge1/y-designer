@@ -1,0 +1,1377 @@
+[ 2017-04-09T13:09:49+08:00 ] ::1 /YDesigner/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+
+[ 2017-04-09T13:09:49+08:00 ] ::1 /YDesigner/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2017-04-09T13:09:57+08:00 ] ::1 /YDesigner/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `yd_user` WHERE ( username='admin' and password='gnh02n2leqiyp3Kus3R3r4atbm4' )  [ RunTime:0.0004s ]
+
+[ 2017-04-09T13:10:01+08:00 ] ::1 /YDesigner/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `yd_user` WHERE ( username='admin' and password='gnh02n2leqiyp3Kus3R3cw' )  [ RunTime:0.0004s ]
+SQL: UPDATE `yd_user` SET `last_login_time`='1491714601' WHERE ( id='3' ) [ RunTime:0.0559s ]
+
+[ 2017-04-09T13:10:01+08:00 ] ::1 /YDesigner/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-04-09T13:10:04+08:00 ] ::1 /YDesigner/index.php/User/index.html?_=1491714604433
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yd_user` WHERE `name` LIKE '%%' ORDER BY id LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-04-09T13:10:06+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1491714606349
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-04-09T13:10:07+08:00 ] ::1 /YDesigner/index.php/User/index.html?_=1491714607575
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_user` WHERE `name` LIKE '%%' ORDER BY id LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-04-09T13:10:08+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1491714608253
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0736s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2017-04-09T13:10:09+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-04-09T13:10:10+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0573s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2017-04-09T13:10:10+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=1&_=1491714610221
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' and app_id='1' )  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-04-09T13:10:13+08:00 ] ::1 /YDesigner/index.php/Article/index.html?_=1491714612908
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0443s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-04-09T13:10:16+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/16?_=1491714616136
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0555s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='16' and user_id='3' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2017-04-09T14:34:13+08:00 ] ::1 /YDesigner/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-04-09T14:34:13+08:00 ] ::1 /YDesigner/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-04-09T14:34:18+08:00 ] ::1 /YDesigner/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `yd_user` WHERE ( username='admin' and password='gnh02n2leqiyp3Kus3R3r4atbm4' )  [ RunTime:0.0010s ]
+
+[ 2017-04-09T14:34:22+08:00 ] ::1 /YDesigner/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `yd_user` WHERE ( username='admin' and password='gnh02n2leqiyp3Kus3R3cw' )  [ RunTime:0.0005s ]
+SQL: UPDATE `yd_user` SET `last_login_time`='1491719662' WHERE ( id='3' ) [ RunTime:0.0711s ]
+
+[ 2017-04-09T14:34:22+08:00 ] ::1 /YDesigner/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-04-09T14:34:25+08:00 ] ::1 /YDesigner/index.php/Index/password.html?_=1491719665028
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-04-09T14:34:31+08:00 ] ::1 /YDesigner/index.php/Index/password.html?_=1491719665028
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+
+[ 2017-04-09T14:34:36+08:00 ] ::1 /YDesigner/index.php/User/index.html?_=1491719676456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yd_user` WHERE `name` LIKE '%%' ORDER BY id LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-04-09T14:34:38+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1491719678142
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-04-09T14:34:38+08:00 ] ::1 /YDesigner/index.php/Article/index.html?_=1491719678765
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0536s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2017-04-09T14:34:42+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/16?_=1491719681934
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0566s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='16' and user_id='3' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-04-09T14:35:19+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/16?_=1491719681934
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+
+[ 2017-04-09T14:36:00+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/16?_=1491719681934
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0577s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='16' and user_id='3' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate D:\xampp\htdocs\YDesigner\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\xampp\htdocs\YDesigner\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `yd_article` SET `category`='03',`title`='应用后台设计器由来',`content`='&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2013年，我加入了某公司。加入公司以后，我一直从事应用系统和各种后台的制作。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 公司有个特点，就是追求速度，做项目都是按天、按小时来计算的。老板经常会问你这个项目你能几天做完，当你说一个月之后，老板会说如果让他做，他一周就做完了。于是，项目定的时间很短，你得天天加班加点做。到了项目规定的时间，还没有做完，这是客户会直接打电话催你，老板也会天天催你，天天烦，就更没心情做项目了。客户和老板都会问你：规定的时间到了，怎么还没做完？到底还需要多少天做完，能不能给个准确数。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 本来就是一周工作六天，周一晚上例会，其他晚上只要你项目没做完，老板就会认为你应该加班做，周天也不放过。而且，只要老板叫一个人加班，他经常会把所有人都喊过来，理由是人家某某都加班，你为什么不愿意加班。他会理由当然地认为所有人都应该加班，而且不给加班费。老板认为：加班是因为你白天没好好工作，才会加班。你如果白天认真工作的话，肯定不用加班就能完成。晚上加班、周天加班会让人特别累，周六下午根本没有要放假的感觉。周天也休息不好，恶性循环，会导致效率越来越差。&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 网上有各种各样的网站，有一些网站是展示用的，这些称为文章发布系统，例如一些公司的官网。还有一些是企业内部使用，例如人力资源管理系统、请销假系统、排课系统、选课系统、物资管理系统等，这些应用系统，特别是用于大型国企的系统，做起来要比做个公司官网复杂的多。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 在这么短的时间里，做这么复杂的系统，很容易超出预定时间。但是做后台有一个好处就是，有众多好用的框架，因为应用系统面对的是内部用户，用户一般也不会对界面太挑剔，能用就行。做后台的难度在于业务逻辑复杂，每种系统都差别很大，少则三四个模块，多则几百个模块。应用系统用到的控件很统一，一般就是表格和表单，但是每个表格和表单的内容大不相同。我们有没有办法通过一定的设置，让程序自动完成每个表格和表单的设计呢？&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 做应用系统遇到的第二个问题是，懂业务流程的人一般是企业管理者，但是他们不会编程；而会编程的我们却不懂企业的业务流程。客户的需求一般就是几页纸，很简单，其中细节问题需要我们自己问明白。做项目很大的一部分时间花在了我们学习企业的业务流程上，而且如果我们理解不对就去编程，很可能做了很多无用功。有没有办法让懂业务、不懂编程的人自己可以设计出系统？这样我们程序员就不用弄懂各个企业的管理流程，把注意力完全集中在编程上了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 我的想法是参考数据库管理工具，例如Oracle数据库的SQL Developer和MySql的SQLyog。这些数据库管理工具可以在不懂SQL语法的情况下，完成数据表的设计工作，而且也很方便进行增删改查。使用视图功能还可以完成复杂的统计报表功能。数据库管理工具的缺点是界面不友好，而且数据的保密性做的不好，权限都没控制，任何连接数据库的人都可以进行随意操作。我们有没有办法，改掉的这些缺点，让懂业务的人很方便地使用类似数据库管理工具类型的东西自己设计表，完成自己需要的各种工作。如果可以的话，我们程序员就可以从复杂的业务流程中解脱出来。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 程序员是个非常累人的工作，如果你做财务管理系统，你得去学习会计的各种知识；如果你做请销假系统，你得学习企业的请销假申请审批的流程；如果你做石油等专业软件的话，你得学习石油的各种知识。&lt;span style=&quot;font-size:16px;&quot;&gt;做几年程序员，真成了全才了。&lt;/span&gt;在我们这样的公司，一般跟用户沟通交流，设计，编码，测试都是你一个人做，除非你是新来的，老板和其他人可能会带你做几个项目，以后就得靠自己了。在这种公司工作，会非常累，我希望可以从这种工作中解脱出来，做设计、编码用的时间尽量少，把时间尽可能多的用在跟客户交流、锻炼身体、陪家人朋友上。但愿我自己的项目可以成功，祝我自己赚更多的钱，祝我自己可以在工作中享受到生活的乐趣。目前项目已在制作中，我会尽快放出Demo供大家测试，祝大家玩得开心。&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;',`comment`='' WHERE `id` = '16' [ RunTime:0.0558s ]
+
+[ 2017-04-09T14:36:00+08:00 ] ::1 /YDesigner/index.php/Article/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719760775
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-04-09T14:36:04+08:00 ] ::1 /YDesigner/index.php/Index/password.html?_=1491719764444
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-04-09T14:36:10+08:00 ] ::1 /YDesigner/index.php/Index/password.html?_=1491719764444
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `yd_user` WHERE ( id='3' and password='gnh02n2leqiyp3Kus3R3cw' )  [ RunTime:0.0004s ]
+SQL: UPDATE `yd_user` SET `password`='gnh02n2leqiyp3Kus3R3r4atbm4' WHERE ( id='3' ) [ RunTime:0.0785s ]
+
+[ 2017-04-09T14:36:11+08:00 ] ::1 /YDesigner/index.php/Article/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719760775
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-04-09T14:36:13+08:00 ] ::1 /YDesigner/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2017-04-09T14:36:14+08:00 ] ::1 /YDesigner/index.php/Article/index.html?_=1491719774256
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2017-04-09T14:36:17+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/17?_=1491719777205
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0582s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='17' and user_id='3' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-04-09T14:36:22+08:00 ] ::1 /YDesigner/index.php/Article/remove/id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='17' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: DELETE FROM `yd_article` WHERE ( id='17' ) [ RunTime:0.0723s ]
+
+[ 2017-04-09T14:36:22+08:00 ] ::1 /YDesigner/index.php/Article/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719782388
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` WHERE `title` LIKE '%%' AND `user_id` = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_article.id,yd_article.category,yd_article.title,yd_user.name user_name,yd_article.time,yd_article.comment FROM `yd_article` left join yd_user on yd_user.id=yd_article.user_id  WHERE `title` LIKE '%%' AND `user_id` = '3' ORDER BY yd_article.id desc LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-04-09T14:36:23+08:00 ] ::1 /YDesigner/index.php/Article/edit/id/16?_=1491719783724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0534s ]
+SQL: SELECT * FROM `yd_article` WHERE ( id='16' and user_id='3' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-04-09T14:36:28+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1491719788669
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0617s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2017-04-09T14:36:40+08:00 ] ::1 /YDesigner/index.php/App/remove/app_id/20
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0602s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='20' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: DELETE FROM `yd_app` WHERE ( id='20' ) [ RunTime:0.0657s ]
+
+[ 2017-04-09T14:36:40+08:00 ] ::1 /YDesigner/index.php/App/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719800790
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-04-09T14:36:43+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-04-09T14:36:43+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.1829s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='14' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='14' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'47' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-04-09T14:36:44+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=14&_=1491719804088
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='14' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0471s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'47' and app_id='14' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2017-04-09T14:36:47+08:00 ] ::1 /YDesigner/index.php/App/remove/app_id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0554s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='14' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: DELETE FROM `yd_app` WHERE ( id='14' ) [ RunTime:0.0843s ]
+
+[ 2017-04-09T14:36:47+08:00 ] ::1 /YDesigner/index.php/App/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719807779
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2017-04-09T14:36:49+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+
+[ 2017-04-09T14:36:49+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0398s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='13' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='13' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0548s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'49' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2017-04-09T14:36:49+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=13&_=1491719809592
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='13' and user_id='3' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'49' and app_id='13' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-04-09T14:36:53+08:00 ] ::1 /YDesigner/index.php/App/remove/app_id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='13' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: DELETE FROM `yd_app` WHERE ( id='13' ) [ RunTime:0.0708s ]
+
+[ 2017-04-09T14:36:53+08:00 ] ::1 /YDesigner/index.php/App/index.html?pageNum=1&numPerPage=100&keyword=&_=1491719813788
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-04-09T14:36:55+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-04-09T14:36:55+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0895s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'27' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-04-09T14:36:55+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=12&_=1491719815521
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'27' and app_id='12' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2017-04-09T14:36:58+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-04-09T14:36:58+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0437s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2017-04-09T14:36:59+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=1&_=1491719819042
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' and app_id='1' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-04-09T14:37:03+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-04-09T14:37:03+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'54' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001660s ]
+
+[ 2017-04-09T14:37:04+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=21&_=1491719823992
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'54' and app_id='21' )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-04-09T14:37:11+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1491719831541
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0553s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2017-04-09T14:37:41+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2017-04-09T14:37:42+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2017-04-09T14:37:42+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=1&_=1491719862120
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' and app_id='1' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2017-04-09T14:38:06+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+
+[ 2017-04-09T14:38:06+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0849s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'27' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2017-04-09T14:38:07+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=12&_=1491719887041
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='12' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'27' and app_id='12' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-04-09T14:38:29+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-04-09T14:38:29+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0854s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'54' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2017-04-09T14:38:29+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=21&_=1491719909444
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='21' and user_id='3' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'54' and app_id='21' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-04-09T14:38:56+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-04-09T14:38:56+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-04-09T14:38:56+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=1&_=1491719936611
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' and user_id='3' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' and app_id='1' )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2017-04-09T14:39:02+08:00 ] ::1 /YDesigner/index.php/Template/index.html?app_id=1&menu_id=6&_=1491719941965
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `yd_part` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `yd_part` WHERE ( app_id='1' and menu_id='6' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yd_part` WHERE ( app_id='1' and menu_id='6' and code='main' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yd_part` WHERE ( app_id='1' and menu_id='6' and code='search' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yd_col` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `yd_col` WHERE ( part_id='1' ) ORDER BY `order`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yd_form` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `yd_form` WHERE ( part_id='2' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+

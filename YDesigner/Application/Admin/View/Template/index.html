@@ -1,0 +1,102 @@
+﻿<form id="pagerForm" method="post" action="__SELF__">
+    <input type="hidden" name="pageNum" value="{$pageNum}" />
+    <input type="hidden" name="numPerPage" value="{$numPerPage}" />
+    <input type="hidden" name="app_id" value="{$app_id}" />
+    <input type="hidden" name="menu_id" value="{$menu_id}" />
+</form>
+
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="__SELF__" method="post" rel="pagerForm">
+        <div class="searchBar">
+            <ul class="searchContent">
+                <volist name="searches" id="vo_search">
+                    <li>
+                        {$vo_search.name}：<input type="text" name="{$vo_search.code}" value="" />
+                    </li>
+                </volist>
+            </ul>
+            <div class="subBar">
+                <ul>
+                    <li>
+                        <div class="buttonActive">
+                            <div class="buttonContent">
+                                <button type="submit">检索</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="add" href="__URL__/add?app_id={$app_id}&menu_id={$menu_id}" target="dialog" title="添加" mask="true"><span>添加</span></a></li>
+            <li><a class="edit" href="__URL__/edit?app_id={$app_id}&menu_id={$menu_id}" target="dialog" title="修改" mask="true"><span>修改</span></a></li>
+            <li><a class="delete" href="__URL__/remove/user_id/{sid}?app_id={$app_id}&menu_id={$menu_id}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
+        </ul>
+    </div>
+    <table class="table" width="100%" layouth="138">
+        <thead>
+            <tr>
+                <volist name="mains" id="vo_main">
+                    <th <if condition="$i neq count($mains)">width="{$vo_main.width}"</if>>{$vo_main.name}</th>
+                </volist>
+            </tr>
+        </thead>
+        <tbody>
+            <foreach name="list" item="vo">
+                <tr target="sid" rel="{$vo.id}">
+
+                </tr>
+            </foreach>
+        </tbody>
+    </table>
+    <div class="panelBar">
+        <div class="pages">
+            <span>显示</span>
+            <select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                <option value="20" <eq name="numPerPage" value="20">selected</eq>>20</option>
+                <option value="50" <eq name="numPerPage" value="50">selected</eq>>50</option>
+                <option value="100" <eq name="numPerPage" value="100">selected</eq>>100</option>
+                <option value="200" <eq name="numPerPage" value="200">selected</eq>>200</option>
+            </select>
+            <span>条，共{$total}条</span>
+        </div>
+        <div class="pagination" targettype="navTab" totalcount="{$total}" numperpage="{$numPerPage}" pagenumshown="10" currentpage="{$pageNum}"></div>
+    </div>
+</div>
+
+<script>
+    function bindCRUDContextMenu() { //为模板添加右键菜单
+        $(".pageHeader,.pageContent").contextMenu('crudCM', {
+            bindings: {
+                editMain: function (r) { //修改表格字段
+                    navTab.openTab('editTable_index', "{:U('editTable_index',array('app_id'=>$app_id,'menu_id'=>$menu_id))}", {
+                        title: '修改表格字段'
+                    });
+                },
+                editSearch: function (r) { //修改查询表单
+                    navTab.openTab('editForm_index', "{:U('editForm_index',array('app_id'=>$app_id,'menu_id'=>$menu_id,'form_type'=>'search'))}", {
+                        title: '修改查询表单'
+                    });
+                },
+                editAddForm: function (r) { //修改新增表单
+                    navTab.openTab('editForm_index', "{:U('editForm_index',array('app_id'=>$app_id,'menu_id'=>$menu_id,'form_type'=>'add_form'))}", {
+                        title: '修改新增表单'
+                    });
+                },
+                editEditForm: function (r) { //修改编辑表单
+                    navTab.openTab('editForm_index', "{:U('editForm_index',array('app_id'=>$app_id,'menu_id'=>$menu_id,'form_type'=>'edit_form'))}", {
+                        title: '修改编辑表单'
+                    });
+                }
+            }
+        });
+    }
+    $(function () {
+        bindCRUDContextMenu();
+    });
+</script>
+ 

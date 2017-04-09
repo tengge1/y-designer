@@ -1,0 +1,85 @@
+﻿<form id="pagerForm" method="post" action="__SELF__">
+    <input type="hidden" name="pageNum" value="{$pageNum}" />
+    <input type="hidden" name="numPerPage" value="{$numPerPage}" />
+    <input type="hidden" name="app_id" value="{$app_id}" />
+    <input type="hidden" name="menu_id" value="{$menu_id}" />
+</form>
+
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="__SELF__" method="post" rel="pagerForm">
+        <div class="searchBar">
+            <table class="searchContent">
+                <tr>
+                    <td>名称：<input type="text" name="keyword" value="{$keyword}" />
+                    </td>
+                </tr>
+            </table>
+            <div class="subBar">
+                <ul>
+                    <li>
+                        <div class="buttonActive">
+                            <div class="buttonContent">
+                                <button type="submit">检索</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="add" href="__URL__/editTable_add?app_id={$app_id}&menu_id={$menu_id}&part_id={$part_id}" target="dialog" title="添加字段" mask="true" height="400"><span>添加</span></a></li>
+            <li><a class="edit" href="__URL__/editTable_edit/col_id/{sid}?app_id={$app_id}&menu_id={$menu_id}&part_id={$part_id}" target="dialog" title="修改字段" mask="true" height="400"><span>修改</span></a></li>
+            <li><a class="delete" href="__URL__/editTable_remove/col_id/{sid}" target="ajaxTodo" title="确定要删除吗?"><span>删除</span></a></li>
+        </ul>
+    </div>
+    <table class="table" width="100%" layouth="138">
+        <thead>
+            <tr>
+                <th width="60">编号</th>
+                <th width="120">名称</th>
+                <th width="100">代码</th>
+                <th width="80">宽度</th>
+                <th width="100">类型</th>
+                <th width="80">字符串长度</th>
+                <th width="60">排序</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        <tbody>
+            <foreach name="list" item="vo">
+                <tr target="sid" rel="{$vo.id}">
+                    <td>{$vo.id}</td>
+                    <td>{$vo.name}</td>
+                    <td>{$vo.code}</td>
+                    <td>{$vo.width}</td>
+                    <td>
+                        <switch name="vo.type">
+                            <case value="01">整数</case>
+                            <case value="02">限制长度字符串</case>
+                        </switch>
+                    </td>
+                    <td>{$vo.size}</td>
+                    <td>{$vo.order}</td>
+                    <td>{$vo.comment}</td>
+                </tr>
+            </foreach>
+        </tbody>
+    </table>
+    <div class="panelBar">
+        <div class="pages">
+            <span>显示</span>
+            <select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                <option value="20" <eq name="numPerPage" value="20">selected</eq>>20</option>
+                <option value="50" <eq name="numPerPage" value="50">selected</eq>>50</option>
+                <option value="100" <eq name="numPerPage" value="100">selected</eq>>100</option>
+                <option value="200" <eq name="numPerPage" value="200">selected</eq>>200</option>
+            </select>
+            <span>条，共{$total}条</span>
+        </div>
+        <div class="pagination" targettype="navTab" totalcount="{$total}" numperpage="{$numPerPage}" pagenumshown="10" currentpage="{$pageNum}"></div>
+    </div>
+</div>

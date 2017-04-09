@@ -1,0 +1,10 @@
+﻿.bottom-text {
+    color:#76c9da !important;
+}
+.navbar-white {
+    background-color:#fff;
+    box-shadow: 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075);
+}
+.navbar-header .navbar-brand {
+    color:white;
+}

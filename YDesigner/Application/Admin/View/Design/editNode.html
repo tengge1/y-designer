@@ -1,0 +1,38 @@
+﻿<div class="pageContent">
+    <form method="post" action="__SELF__" class="pageForm required-validate" onsubmit="return validateCallback(this, nodeAjaxDone);">
+        <div class="pageFormContent" layouth="56">
+            <input type="hidden" name="app_id" value="{$app_id}" />
+            <input type="hidden" name="node_id" value="{$node_id}" />
+            <p>
+                <label>节点名称：</label>
+                <input name="name" class="required" type="text" size="30" value="{$node.name}" autocomplete="off" />
+            </p>
+            <p>
+                <label>排序：</label>
+                <input name="order" class="required" type="text" size="30" value="{$node.order}" autocomplete="off" />
+            </p>
+            <p>
+                <label>备注：</label>
+                <input name="comment" type="text" size="30" value="{$node.comment}" autocomplete="off" />
+            </p>
+        </div>
+        <div class="formBar">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">保存</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button type="button" class="close">取消</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

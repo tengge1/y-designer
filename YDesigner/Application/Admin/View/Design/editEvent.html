@@ -1,0 +1,41 @@
+﻿<div class="pageContent">
+    <form method="post" action="__SELF__" class="pageForm required-validate" onsubmit="return validateCallback(this, nodeAjaxDone);">
+        <div class="pageFormContent" layouth="56">
+            <input type="hidden" name="app_id" value="{$app_id}" />
+            <input type="hidden" name="node_id" value="{$node_id}" />
+            <p>
+                <label>动作模板：</label>
+                <select name="url" class="required combox">
+                    <option value="" <if condition="$node['url'] eq null">selected</if>>请选择</option>
+                    <option value="{:U('Template/index').$para}" <if condition="$node['url'] eq U('Template/Index/index').$para">selected</if>>增删改查模板</option>
+                </select>
+            </p>
+            <p>
+                <label>动作目标：</label>
+                <select name="target" class="required combox">
+                    <option value="" <if condition="$node['target'] eq null">selected</if>>请选择</option>
+                    <option value="navTab" <if condition="$node['target'] eq 'navTab'">selected</if>>标签页中打开</option>
+                    <option value="dialog" <if condition="$node['target'] eq 'dialog'">selected</if>>对话框中打开</option>
+                </select>
+            </p>
+        </div>
+        <div class="formBar">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">保存</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <div class="buttonContent">
+                            <button type="button" class="close">取消</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>

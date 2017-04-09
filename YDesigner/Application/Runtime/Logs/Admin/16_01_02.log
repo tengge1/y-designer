@@ -1,0 +1,169 @@
+[ 2016-01-02T22:37:40+08:00 ] ::1 /YDesigner/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+
+[ 2016-01-02T22:37:41+08:00 ] ::1 /YDesigner/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2016-01-02T22:37:47+08:00 ] ::1 /YDesigner/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `yd_user` WHERE ( username='admin' and password='gnh02n2leqiyp3Kus3R3cw' )  [ RunTime:0.0461s ]
+SQL: UPDATE `yd_user` SET `last_login_time`='1451745467' WHERE ( id='3' ) [ RunTime:0.0651s ]
+
+[ 2016-01-02T22:37:48+08:00 ] ::1 /YDesigner/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `yd_article` [ RunTime:0.0468s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_article` LIMIT 1   [ RunTime:0.0454s ]
+SQL: SHOW COLUMNS FROM `yd_user` [ RunTime:0.0464s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_user` LIMIT 1   [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0462s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` LIMIT 1   [ RunTime:0.0461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-01-02T22:37:51+08:00 ] ::1 /YDesigner/index.php/App/index.html?_=1451745471183
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0457s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yd_app` WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' LIMIT 1   [ RunTime:0.0442s ]
+SQL: SELECT yd_app.id,yd_app.name,yd_app.code,yd_user.name user_name,yd_app.create_time,yd_app.comment FROM `yd_app` inner join yd_user on yd_user.id=yd_app.user_id  WHERE yd_app.name LIKE '%%' AND yd_app.user_id = '3' ORDER BY yd_app.id LIMIT 0,100   [ RunTime:0.0451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001911s ]
+
+[ 2016-01-02T22:37:54+08:00 ] ::1 /YDesigner/index.php/App/design/app_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+
+[ 2016-01-02T22:37:54+08:00 ] ::1 /YDesigner/index.php/Design/index/app_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0454s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0458s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0466s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' )  [ RunTime:0.0465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000336s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2016-01-02T22:37:55+08:00 ] ::1 /YDesigner/index.php/Design/mainMenu.html?app_id=1&_=1451745475240
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW COLUMNS FROM `yd_app` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `yd_app` WHERE ( id='1' )  [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `yd_menu` [ RunTime:0.0449s ]
+SQL: SELECT * FROM `yd_menu` WHERE ( id<>'1' and left(code,locate('_',code)-1)='qxj' )  [ RunTime:0.0452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001767s ]
+
+[ 2016-01-02T22:41:35+08:00 ] ::1 /YDesigner/index.php/Template/Index/index.html?app_id=1&menu_id=6&_=1451745695235
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002118s ]
+ERR: 1146:Table 'YDesigner.yd_table' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yd_table`
+ERR: 1146:Table 'YDesigner.yd_table' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yd_table`
+
+[ 2016-01-02T22:41:47+08:00 ] ::1 /YDesigner/index.php/Template/Index/index.html?app_id=1&menu_id=6&_=1451745706880
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+ERR: 1146:Table 'YDesigner.yd_table' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yd_table`
+ERR: 1146:Table 'YDesigner.yd_table' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `yd_table`
+
